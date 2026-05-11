@@ -11,11 +11,11 @@
 
 **A standalone exec client for Azure Container Apps. When `az containerapp exec` isn't an option.**
 
-Siphon speaks Azure's undocumented WebSocket protocol directly using raw ARM tokens — no `az login`, no CLI install, no Conditional Access evaluation at runtime.
+Siphon speaks to Azure's undocumented WebSocket protocol directly using raw ARM tokens no `az login`, no CLI install, no Conditional Access evaluation at runtime.
 
 ## Why Siphon?
 
-During red team engagements, you often have a valid ARM token but no way to use it with `az containerapp exec`:
+During engagements, you often have a valid ARM token but no way to use it with `az containerapp exec`:
 
 - **You have a stolen token, not an `az login` session** — the token came from FOCI pivoting, a compromised managed identity, CI/CD secrets, or token cache extraction. There's no clean way to feed a raw token into `az containerapp exec`.
 - **Conditional Access blocks `az login`** — the org requires MFA for Azure Management, but your token was issued through a path that CA didn't cover. `az login` would force a new auth flow and trigger MFA.
