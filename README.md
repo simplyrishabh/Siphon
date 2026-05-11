@@ -54,7 +54,7 @@ During engagements, you often have a valid ARM token but no way to use it with `
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/siphon.git
+git clone https://github.com/simplyrishabh/siphon.git
 cd siphon
 pip install -r requirements.txt
 ```
