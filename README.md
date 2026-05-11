@@ -35,7 +35,7 @@ During engagements, you often have a valid ARM token but no way to use it with `
 
 ## Screenshot
 
-![Siphon Hero](screenshots/screenshot-hero.png)
+![Siphon Shell](screenshots/screenshot-shell.png)
 
 <details>
 <summary>MI Token Minting</summary>
